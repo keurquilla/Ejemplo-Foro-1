@@ -1,0 +1,43 @@
+﻿<Window x:Class="Ejemplo_Foro_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejemplo_Foro_1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="GridP" UseLayoutRounding="False">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FFA81C1C" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="but1" Content="Mensaje1" HorizontalAlignment="Left" Height="34" Margin="30,183,0,0" VerticalAlignment="Top" Width="248" Click="but1_Click"/>
+        <Label x:Name="label1" Content="Aplicacion Funcionando" HorizontalAlignment="Left" Height="39" Margin="557,359,0,0" VerticalAlignment="Top" Width="233" Initialized="label1_Initialized" Background="#FF232EA2" BorderBrush="#FF0C0303" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <TextBlock x:Name="TB1" HorizontalAlignment="Left" Height="40" Margin="30,25,0,0" Text="Prueba de Ejemplo para el Foro 1" TextWrapping="Wrap" VerticalAlignment="Top" Width="248" Background="#FF858BA4"/>
+        <GridSplitter HorizontalAlignment="Left" Margin="333,2,0,-4" Width="3" RenderTransformOrigin="0.5,0.5">
+            <GridSplitter.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.445"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </GridSplitter.RenderTransform>
+        </GridSplitter>
+        <Label x:Name="Label2" Content="Por favor, presione el boton 1" HorizontalAlignment="Left" Margin="30,113,0,0" VerticalAlignment="Top" Width="245" Height="47" FontFamily="Arial Black" FontWeight="Bold" BorderBrush="Black" OpacityMask="Black">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="0.9"/>
+                    <GradientStop Color="#FF221BB6" Offset="0.063"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+    </Grid>
+</Window>
